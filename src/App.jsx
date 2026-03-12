@@ -72,7 +72,7 @@ function DoneScreen({ score, total, wrong, wrongMode, onMenu, onAgain }) {
   return (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 32, overflowY: 'auto' }}>
       <div style={{ fontSize: 64, marginBottom: 12 }}>{emoji}</div>
-      <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Syne, sans-serif' }}>{score}/{total}</div>
+      <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Barlow Condensed, sans-serif' }}>{score}/{total}</div>
       <div style={{ fontSize: 15, color: '#666', marginBottom: 32 }}>{pct}% {wrongMode ? 'без ошибок' : 'правильно'}</div>
 
       {wrong.length > 0 && (
@@ -113,7 +113,7 @@ function HomeScreen({ onStart }) {
     <div style={{ flex: 1, overflowY: 'auto', padding: '28px 24px 48px' }}>
       <div style={{ marginBottom: 32 }}>
         <div style={{ fontSize: 10, letterSpacing: 4, color: '#555', marginBottom: 8 }}>ENGLISH GRAMMAR</div>
-        <div style={{ fontSize: 32, fontWeight: 800, color: '#F5F5F0', lineHeight: 1.2, fontFamily: 'Syne, sans-serif' }}>
+        <div style={{ fontSize: 32, fontWeight: 800, color: '#F5F5F0', lineHeight: 1.2, fontFamily: 'Barlow Condensed, sans-serif' }}>
           Неправильные<br />глаголы
         </div>
         <div style={{ fontSize: 13, color: '#555', marginTop: 8 }}>100 глаголов · 4 группы</div>
@@ -239,7 +239,7 @@ function FlashcardScreen({ filterGroup, onBack, onRestart }) {
           {!flipped ? (
             <>
               <div style={{ fontSize: 10, letterSpacing: 3, color, marginBottom: 20 }}>ИНФИНИТИВ</div>
-              <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Syne, sans-serif', marginBottom: 10 }}>{verb.v1}</div>
+              <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Barlow Condensed, sans-serif', marginBottom: 10 }}>{verb.v1}</div>
               <div style={{ fontSize: 16, color: '#666', marginBottom: 24 }}>{verb.ru}</div>
               <div style={{
                 background: color + '18', border: `1px solid ${color}33`,
@@ -262,7 +262,7 @@ function FlashcardScreen({ filterGroup, onBack, onRestart }) {
                     {i > 0 && <div style={{ width: 1, height: 50, background: '#1e1e2e', margin: '0 20px' }} />}
                     <div style={{ textAlign: 'center' }}>
                       <div style={{ fontSize: 10, letterSpacing: 2, color: col === '#F5F5F0' ? '#555' : col, marginBottom: 8 }}>{label}</div>
-                      <div style={{ fontSize: 22, fontWeight: 700, color: col, fontFamily: 'Syne, sans-serif' }}>{val}</div>
+                      <div style={{ fontSize: 22, fontWeight: 700, color: col, fontFamily: 'Barlow Condensed, sans-serif' }}>{val}</div>
                     </div>
                   </div>
                 ))}
@@ -339,7 +339,7 @@ function QuizScreen({ filterGroup, onBack, onRestart }) {
       <div style={{ flex: 1, padding: '8px 24px 32px', display: 'flex', flexDirection: 'column' }}>
         <div style={{ marginBottom: 28 }}>
           <div style={{ fontSize: 11, letterSpacing: 3, color, marginBottom: 10 }}>{q.label} от:</div>
-          <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Syne, sans-serif', marginBottom: 6 }}>{verb.v1}</div>
+          <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Barlow Condensed, sans-serif', marginBottom: 6 }}>{verb.v1}</div>
           <div style={{ fontSize: 16, color: '#555' }}>{verb.ru}</div>
         </div>
 
@@ -355,7 +355,7 @@ function QuizScreen({ filterGroup, onBack, onRestart }) {
                 padding: '16px 18px', borderRadius: 14, border: `1.5px solid ${border}`,
                 background: bg, color: col, fontSize: 20, fontWeight: 600,
                 cursor: selected ? 'default' : 'pointer', textAlign: 'left',
-                fontFamily: 'Syne, sans-serif', transition: 'all .15s',
+                fontFamily: 'Barlow Condensed, sans-serif', transition: 'all .15s',
               }}>{opt}</button>
             )
           })}
@@ -412,7 +412,7 @@ function TypeInScreen({ filterGroup, onBack, onRestart }) {
     background: ok ? '#4CAF5010' : err ? '#E91E6310' : '#16161E',
     border: `1.5px solid ${ok ? '#4CAF50' : err ? '#E91E63' : '#2e2e45'}`,
     borderRadius: 12, padding: '14px 16px', fontSize: 20, fontWeight: 600,
-    color: '#F5F5F0', width: '100%', outline: 'none', fontFamily: 'Syne, sans-serif',
+    color: '#F5F5F0', width: '100%', outline: 'none', fontFamily: 'Barlow Condensed, sans-serif',
     caretColor: color,
   })
 
@@ -423,7 +423,7 @@ function TypeInScreen({ filterGroup, onBack, onRestart }) {
       <div style={{ flex: 1, padding: '8px 24px 32px', overflowY: 'auto' }}>
         <div style={{ marginBottom: 28 }}>
           <div style={{ fontSize: 10, letterSpacing: 3, color, marginBottom: 10 }}>НАПИШИТЕ ФОРМЫ</div>
-          <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Syne, sans-serif', marginBottom: 6 }}>{verb.v1}</div>
+          <div style={{ fontSize: 52, fontWeight: 800, color: '#F5F5F0', fontFamily: 'Barlow Condensed, sans-serif', marginBottom: 6 }}>{verb.v1}</div>
           <div style={{ fontSize: 16, color: '#555' }}>{verb.ru}</div>
         </div>
 
